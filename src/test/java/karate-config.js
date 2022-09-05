@@ -7,7 +7,7 @@ function fn() {
   var config = {
     env: env,
     wiremockHost: 'http://localhost:7176',
-    wiremockOrderPort: java.lang.System.getenv('ORDER_PORT')
+    wiremockOrderPort: java.lang.System.getenv('ORDER_PORT') || 7176
   }
   if (env == 'dev') {
     // customize
