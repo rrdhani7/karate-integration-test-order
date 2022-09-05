@@ -1,0 +1,7 @@
+{
+  "order_id": "ord001",
+  "order_description": "sample description",
+  "order_status": "New",
+  "last_updated_timestamp": null,
+  "special_order": false
+}

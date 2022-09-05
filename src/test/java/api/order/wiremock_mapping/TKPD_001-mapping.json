@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/processOrder",
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "order_id": "ord001",
+          "order_description": "sample description",
+          "order_status": "New",
+          "last_updated_timestamp": "1642321210439",
+          "special_order": false
+        }
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "order_id": "ord001",
+      "order_description": "sample description",
+      "order_status": "Processed",
+      "last_updated_timestamp": "1642329999999",
+      "special_order": false
+    }
+  }
+}

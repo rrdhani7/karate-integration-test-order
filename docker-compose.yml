@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  wiremock:
+    container_name: api.order.wiremock
+    image: api.order.wiremock/api.order.wiremock
+    ports:
+      - 7176:8080
